@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body id="home" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
     <!-- Nav -->
@@ -29,8 +30,8 @@
     </nav>
     <!-- /nav -->
     <!-- jumbotron[Attention section] -->
-    <div class=" p-5 bg-info text-white text-sm-center">
-      <h1 class="display-2">Full Stack Conf</h1>
+    <div class=" jumbotron p-5 bg-info text-white text-sm-center">
+      <h1 class="display-2 mt-5">Full Stack Conf</h1>
       <p>A One-day Conference About All Things JavaScript</p>
       <!-- btn group -->
       <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
@@ -137,28 +138,52 @@
       <!-- callout button -->
       <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5" data-bs-toggle="modal" data-bs-target="#register">Dont miss out register now!</button>
       <ul class="list-group">
-        <li class="list-group-item">
+        <li class="list-group-item" data-bs-toggle="collapse" href="#keynote-more-info" role="button" aria-expanded="false">
           <div class="d-flex justify-content-between">
             <h5 class="mb-1">Keynote: Internet of things</h5>
             <span class="badge rounded-pill bg-info text-light p-2">9:00am</span>
           </div>
           <p class="mb-1">Nodestradamus</p>
+          <div class="collapse" id="keynote-more-info">
+            <div class="card card-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dignissimos necessitatibus alias. Quidem eum quam, sequi unde voluptates magni modi eius at enim accusantium distinctio reprehenderit aliquam quo impedit sunt?
+              Saepe veniam quibusdam pariatur quaerat facilis quasi, voluptates deleniti consequuntur. Id consequuntur beatae incidunt cumque accusantium molestias iure, distinctio aperiam enim sint illum ex maxime commodi aut veritatis consectetur sapiente.
+              Similique blanditiis consequatur corporis reiciendis illum, id accusamus voluptas neque eaque nostrum voluptatem dolore quas, laborum unde vero esse eum, ut repellat! Tempora, sunt pariatur? Veniam exercitationem dolorum itaque odio.
+              Modi sequi provident hic est exercitationem, consequatur quam fugiat, eum ipsum temporibus blanditiis in sit facilis nemo unde assumenda expedita excepturi? Consequuntur voluptatem molestias id optio. Eius commodi perspiciatis quia?</p>
+            </div>
+          </div>
         </li>
 
-        <li class="list-group-item">
+        <li class="list-group-item" data-bs-toggle="collapse" href="#react-basics" role="button" aria-expanded="false">
           <div class="d-flex justify-content-between">
-            <h5 class="mb-1">React Basic</h5>
+            <h5 class="mb-1">React Basics</h5>
             <span class="badge rounded-pill bg-info text-light p-2">10:00am</span>
           </div>
           <p class="mb-1">Vivianne McVue</p>
+          <div class="collapse" id="react-basics">
+            <div class="card card-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dignissimos necessitatibus alias. Quidem eum quam, sequi unde voluptates magni modi eius at enim accusantium distinctio reprehenderit aliquam quo impedit sunt?
+              Saepe veniam quibusdam pariatur quaerat facilis quasi, voluptates deleniti consequuntur. Id consequuntur beatae incidunt cumque accusantium molestias iure, distinctio aperiam enim sint illum ex maxime commodi aut veritatis consectetur sapiente.
+              Similique blanditiis consequatur corporis reiciendis illum, id accusamus voluptas neque eaque nostrum voluptatem dolore quas, laborum unde vero esse eum, ut repellat! Tempora, sunt pariatur? Veniam exercitationem dolorum itaque odio.
+              Modi sequi provident hic est exercitationem, consequatur quam fugiat, eum ipsum temporibus blanditiis in sit facilis nemo unde assumenda expedita excepturi? Consequuntur voluptatem molestias id optio. Eius commodi perspiciatis quia?</p>
+            </div>
+          </div>
         </li>
 
-        <li class="list-group-item">
+        <li class="list-group-item" data-bs-toggle="collapse" href="#mongo" role="button" aria-expanded="false">
           <div class="d-flex justify-content-between">
             <h5 class="mb-1">Hey, Mongo</h5>
             <span class="badge rounded-pill bg-info text-light p-2">11:00am</span>
           </div>
           <p class="mb-1">Jay Query</p>
+          <div class="collapse" id="mongo">
+            <div class="card card-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dignissimos necessitatibus alias. Quidem eum quam, sequi unde voluptates magni modi eius at enim accusantium distinctio reprehenderit aliquam quo impedit sunt?
+              Saepe veniam quibusdam pariatur quaerat facilis quasi, voluptates deleniti consequuntur. Id consequuntur beatae incidunt cumque accusantium molestias iure, distinctio aperiam enim sint illum ex maxime commodi aut veritatis consectetur sapiente.
+              Similique blanditiis consequatur corporis reiciendis illum, id accusamus voluptas neque eaque nostrum voluptatem dolore quas, laborum unde vero esse eum, ut repellat! Tempora, sunt pariatur? Veniam exercitationem dolorum itaque odio.
+              Modi sequi provident hic est exercitationem, consequatur quam fugiat, eum ipsum temporibus blanditiis in sit facilis nemo unde assumenda expedita excepturi? Consequuntur voluptatem molestias id optio. Eius commodi perspiciatis quia?</p>
+            </div>
+          </div>
         </li>
 
         <li class="list-group-item list-group-item-success">
@@ -169,26 +194,50 @@
           <p class="mb-1">Free Pizza for everyone</p>
         </li>
 
-        <li class="list-group-item">
+        <li class="list-group-item" data-bs-toggle="collapse" href="#ecma" role="button" aria-expanded="false">
           <div class="d-flex justify-content-between">
             <h5 class="mb-1">Introducing ES2015</h5>
             <span class="badge rounded-pill bg-info text-light p-2">1:00pm</span>
           </div>
           <p class="mb-1">Ecma Scriptnstuff</p>
+          <div class="collapse" id="ecma">
+            <div class="card card-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dignissimos necessitatibus alias. Quidem eum quam, sequi unde voluptates magni modi eius at enim accusantium distinctio reprehenderit aliquam quo impedit sunt?
+              Saepe veniam quibusdam pariatur quaerat facilis quasi, voluptates deleniti consequuntur. Id consequuntur beatae incidunt cumque accusantium molestias iure, distinctio aperiam enim sint illum ex maxime commodi aut veritatis consectetur sapiente.
+              Similique blanditiis consequatur corporis reiciendis illum, id accusamus voluptas neque eaque nostrum voluptatem dolore quas, laborum unde vero esse eum, ut repellat! Tempora, sunt pariatur? Veniam exercitationem dolorum itaque odio.
+              Modi sequi provident hic est exercitationem, consequatur quam fugiat, eum ipsum temporibus blanditiis in sit facilis nemo unde assumenda expedita excepturi? Consequuntur voluptatem molestias id optio. Eius commodi perspiciatis quia?</p>
+            </div>
+          </div>
         </li> 
-        <li class="list-group-item">
+        <li class="list-group-item" data-bs-toggle="collapse" href="#redux" role="button" aria-expanded="false">
           <div class="d-flex justify-content-between">
             <h5 class="mb-1">Getting Started With Redux</h5>
             <span class="badge rounded-pill bg-info text-light p-2">2:00pm</span>
           </div>
           <p class="mb-1">Robbie Redux</p>
+          <div class="collapse" id="redux">
+            <div class="card card-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dignissimos necessitatibus alias. Quidem eum quam, sequi unde voluptates magni modi eius at enim accusantium distinctio reprehenderit aliquam quo impedit sunt?
+              Saepe veniam quibusdam pariatur quaerat facilis quasi, voluptates deleniti consequuntur. Id consequuntur beatae incidunt cumque accusantium molestias iure, distinctio aperiam enim sint illum ex maxime commodi aut veritatis consectetur sapiente.
+              Similique blanditiis consequatur corporis reiciendis illum, id accusamus voluptas neque eaque nostrum voluptatem dolore quas, laborum unde vero esse eum, ut repellat! Tempora, sunt pariatur? Veniam exercitationem dolorum itaque odio.
+              Modi sequi provident hic est exercitationem, consequatur quam fugiat, eum ipsum temporibus blanditiis in sit facilis nemo unde assumenda expedita excepturi? Consequuntur voluptatem molestias id optio. Eius commodi perspiciatis quia?</p>
+            </div>
+          </div>
         </li> 
-        <li class="list-group-item">
+        <li class="list-group-item" data-bs-toggle="collapse" href="#babel" role="button" aria-expanded="false">
           <div class="d-flex justify-content-between">
             <h5 class="mb-1">What's Babel?</h5>
             <span class="badge rounded-pill bg-info text-light p-2">3:00pm</span>
           </div>
           <p class="mb-1">Json Babel</p>
+          <div class="collapse" id="babel">
+            <div class="card card-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dignissimos necessitatibus alias. Quidem eum quam, sequi unde voluptates magni modi eius at enim accusantium distinctio reprehenderit aliquam quo impedit sunt?
+              Saepe veniam quibusdam pariatur quaerat facilis quasi, voluptates deleniti consequuntur. Id consequuntur beatae incidunt cumque accusantium molestias iure, distinctio aperiam enim sint illum ex maxime commodi aut veritatis consectetur sapiente.
+              Similique blanditiis consequatur corporis reiciendis illum, id accusamus voluptas neque eaque nostrum voluptatem dolore quas, laborum unde vero esse eum, ut repellat! Tempora, sunt pariatur? Veniam exercitationem dolorum itaque odio.
+              Modi sequi provident hic est exercitationem, consequatur quam fugiat, eum ipsum temporibus blanditiis in sit facilis nemo unde assumenda expedita excepturi? Consequuntur voluptatem molestias id optio. Eius commodi perspiciatis quia?</p>
+            </div>
+          </div>
         </li>   
       </ul>
       <!--/schedule  -->
@@ -257,7 +306,7 @@
           </div>
           <div class="modal-body">
             <!-- registration form -->
-            <form>
+            <form class="needs-validation" novalidate>
               <div class="alert alert-warning alert-dismissible fade show" role="alert">
                 <strong>Hurry!</strong> Early Bird registration ends in two days.
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -266,17 +315,19 @@
               <h5 class="mb-4">Basic Info</h5>
               <div class="mb-3">
                 <label for="name" class="form-label">Name:</label>
-                <input type="text" class="form-control" id="name">
+                <input type="text" class="form-control" id="name" required>
               </div>
+            
 
               <div class="mb-3">
                 <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email">
+                <input type="email" class="form-control" id="email" required>
               </div>
 
               <div class="mb-3">
                 <label for="role" class="form-label">Job Role:</label>
-                <select class="custom-select form-select" id="role">
+                <select class="custom-select form-select" id="role" required>
+                  <option value="" disabled selected>Please choose</option>
                   <option value="full stack js developer">Full Stack JavaScript Developer</option>
                   <option value="front end developer">Front End Developer</option>
                   <option value="back end developer">Back End Developer</option>
@@ -319,23 +370,24 @@
                 <div class="row">
                   <div class="col-lg-6 mb-3">
                     <label for="cc-num" class="mb-2">Card Number:</label>
-                    <input class="form-control" id="cc-num" type="text">
+                    <input class="form-control" id="cc-num" type="text" required>
                   </div>
                 
                   <div class="col-lg mb-3">
                     <label for="zip" class="mb-2">Zip Code:</label>
-                    <input class="form-control" id="zip" type="text">
+                    <input class="form-control" id="zip" type="text" required>
                   </div>
                 
                   <div class="col-lg mb-3">
                     <label for="cvv" class="mb-2">CVV:</label>
-                    <input class="form-control" id="cvv" type="text">
+                    <input class="form-control" id="cvv" type="text" required>
                   </div>
                 </div>
                 <div class="row">
                   <label  class=" form-label col-lg-12">Expiration Date:</label>
                   <div class="mb-3 col-lg-8">
-                    <select class="custom-select form-select" id="exp-month">
+                    <select class="custom-select form-select" id="exp-month" required>
+                      <option value="" selected disabled>Day/Month</option>
                       <option value="1">1 - January</option>
                       <option value="2">2 - February</option>
                       <option value="3">3 - March</option>
@@ -352,7 +404,8 @@
                   </div>
 
                   <div class="mb-3 col-lg">
-                    <select class="custom-select form-select" id="exp-year">
+                    <select class="custom-select form-select" id="exp-year" required>
+                      <option value="" selected disabled>Year</option>
                       <option value="2016">2016</option>
                       <option value="2017">2017</option>
                       <option value="2018">2018</option>
@@ -362,7 +415,7 @@
                   </div>
                 </div>
                 <hr class="mb-4">
-                <button type="button" class="btn btn-primary btn-lg">Register</button>
+                <button type="submit" class="btn btn-primary btn-lg">Register</button>
             </form>
             <!-- /registration form -->
           </div>
@@ -370,6 +423,7 @@
       </div>
     </div>
     <!-- Optional JavaScript -->
+    <script src="app.js"></script>
     <!--Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
