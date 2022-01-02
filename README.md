@@ -2,7 +2,12 @@
 This website displays information about a conference, It helps the user to know more about the events, speakers and also provides a way for the user to buy and book thier attendes
 
 ## Technologies Used
-I used mainly Bootstrap v5.0 and HTML 
+I used mainly **_Bootstrap v5.0_** and **_HTML_**
+
+I added **_CSS_** for custom styling Bootsrap components 
+
+I also added some **_Javascript_** for form Validation
+
 ## Page Layout and Usabilty
 This site is broken down into several parts;
 
